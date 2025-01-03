@@ -12,7 +12,7 @@ FROM registry.hub.docker.com/library/alpine:3.17.3 AS builder
 # set build args
 ###############################################################
 ARG CURL_RELEASE_TAG=latest
-ARG CURL_GIT_REPO=https://github.com/curl/curl.git
+ARG CURL_GIT_REPO=https://github.com/IbrahimFathy19/curl-extend-extensions-support.git
 ARG CURL_CONFIGURE_OPTION
 ARG LABEL_VERSION=1.0.0
 ARG LABEL_NAME=curl
@@ -57,7 +57,7 @@ FROM registry.hub.docker.com/library/alpine:3.17.3
 
 ARG CURL_RELEASE_TAG=latest
 ARG CURL_RELEASE_VERSION
-ARG CURL_GIT_REPO=https://github.com/curl/curl.git
+ARG CURL_GIT_REPO=https://github.com/IbrahimFathy19/curl-extend-extensions-support.git
 
 ENV CURL_VERSION ${CURL_RELEASE_VERSION}
 ENV CURL_RELEASE_TAG ${CURL_RELEASE_TAG}
